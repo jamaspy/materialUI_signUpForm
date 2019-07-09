@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
-import ButtonAppBar from './ButtonAppBar'
+import Drawer from './Drawer'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid'
@@ -17,7 +17,7 @@ export class FormUserDetails extends Component {
         return (
             <MuiThemeProvider>
                 <React.Fragment>
-                    <ButtonAppBar/>
+                    <Drawer/>
                     <Grid
                         container
                         spacing={0}

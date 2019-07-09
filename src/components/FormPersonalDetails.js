@@ -4,6 +4,7 @@ import ButtonAppBar from './ButtonAppBar'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid'
+import Pink from "@material-ui/core/colors/pink"
 
 
 export class FormPersonalDetails extends Component {
@@ -67,7 +68,7 @@ export class FormPersonalDetails extends Component {
                     </Button>
                     <Button
                         variant="contained"
-                        color="primary"
+                        
                         style={styles.button}
                         onClick={this.continue}
                     >
@@ -81,10 +82,13 @@ export class FormPersonalDetails extends Component {
     }
 }
 
+const teal = Pink[500]
 const styles = {
     button: {
         margin: 15,
-        display: "inline"
+        display: "inline",
+        backgroundColor: teal,
+        color:"white"
     }
 }
 export default FormPersonalDetails

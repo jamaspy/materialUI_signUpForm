@@ -48,6 +48,7 @@ export class UserForm extends Component {
             nextStep={this.nextStep}
             handleChange={this.handleChange}
             values={values}
+            title="User Details"
           />
         );
       case 2:
